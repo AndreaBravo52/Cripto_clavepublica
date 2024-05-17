@@ -1,0 +1,2 @@
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt
+scp -i "MyKeyPair.pem" ubuntu@ec2-18-191-206-122.us-east-2.compute.amazonaws.com:/etc/ssl/certs/apache-selfsigned.crt
